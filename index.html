@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Little Love for You — Một điều nhỏ dành riêng cho cậu</title>
+  <meta name="description" content="Một món quà kỹ thuật số dành riêng cho Ngọc Bích, ngày Phụ nữ Việt Nam 20/10." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Nunito:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="stars" aria-hidden="true"></div>
+  <div id="glow-orbs" aria-hidden="true"></div>
+
+  <!-- STATE 1 + 2: Envelope -->
+  <section id="envelope-stage" class="stage active" aria-label="Phong thư bí mật">
+    <h1 class="intro-title">Có một điều tớ muốn gửi đến cậu...</h1>
+    <p class="intro-sub">Dành riêng cho Ngọc Bích, ngày 20/10</p>
+
+    <div class="envelope-wrap" aria-hidden="true">
+      <div class="envelope-glow"></div>
+      <div class="envelope">
+        <div class="letter-paper">
+          <div class="paper-lines"></div>
+          <span class="paper-heart">♡</span>
+        </div>
+        <div class="envelope-body"></div>
+        <div class="envelope-flap"></div>
+        <div class="ribbon-tail"></div>
+        <div class="seal"></div>
+      </div>
+    </div>
+
+    <button id="btn-open-letter" type="button" class="primary-btn">
+      💌 Mở thư nè
+    </button>
+    <p class="hint">Chạm nhẹ để khám phá bí mật nhé</p>
+  </section>
+
+  <!-- STATE 3: Letter -->
+  <section id="letter-stage" class="stage" aria-label="Bức thư 20/10">
+    <article class="letter-card">
+      <span class="tape tape-tl" aria-hidden="true"></span>
+      <span class="tape tape-tr" aria-hidden="true"></span>
+
+      <div class="letter-stamp" aria-hidden="true">
+        <span>20·10</span>
+        <em>♡</em>
+      </div>
+
+      <span class="doodle doodle-1" aria-hidden="true">✦</span>
+      <span class="doodle doodle-2" aria-hidden="true">♡</span>
+
+      <header class="letter-head">
+        <div class="rose-wrap">
+          <svg class="rose-ornament" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="petalGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f9c2d1"/>
+                <stop offset="1" stop-color="#c95579"/>
+              </linearGradient>
+              <radialGradient id="roseCore" cx="50%" cy="45%" r="55%">
+                <stop offset="0" stop-color="#e58aa5"/>
+                <stop offset="1" stop-color="#a83b5d"/>
+              </radialGradient>
+            </defs>
+            <g transform="translate(32 30)">
+              <path d="M0-18c7 4 11 9 11 15S6 8 0 10c-6-2-11-7-11-13s4-11 11-15z" fill="url(#petalGrad)" opacity=".95"/>
+              <path d="M0-12c5 3 8 6 8 10 0 5-4 8-8 10-4-2-8-5-8-10 0-4 3-7 8-10z" fill="url(#roseCore)" opacity=".9"/>
+              <path d="M0-6c3 2 4 4 4 6 0 3-2 5-4 6-2-1-4-3-4-6 0-2 1-4 4-6z" fill="#8e2a4a" opacity=".55"/>
+              <path d="M-12 6c-4 2-7 6-8 11 4 1 8-1 12-4" fill="url(#petalGrad)" opacity=".8"/>
+              <path d="M12 6c4 2 7 6 8 11-4 1-8-1-12-4" fill="url(#petalGrad)" opacity=".8"/>
+              <path d="M-9 12c-2 5-2 9-1 13 3-2 6-5 8-9" fill="#7d9a6a" opacity=".75"/>
+              <path d="M9 12c2 5 2 9 1 13-3-2-6-5-8-9" fill="#6f8d5e" opacity=".7"/>
+              <path d="M0 10c1 6 1 11 0 15-1-4-1-9 0-15z" fill="#8e2a4a" opacity=".5"/>
+            </g>
+          </svg>
+        </div>
+        <p class="letter-eyebrow">Một lá thư nhỏ · 20.10</p>
+        <h2 class="letter-title">Gửi <strong>Ngọc Bích</strong><br /><em>thương của tớ</em></h2>
+        <div class="head-rule" aria-hidden="true"><span></span><b>❦</b><span></span></div>
+      </header>
+
+      <div class="letter-body">
+        <p class="salutation para">Ngọc Bích à,</p>
+
+        <p class="para">Hôm nay là 20/10, và tớ lại có thêm một lý do thật đẹp để nghĩ về cậu. Tớ không giỏi viết những lời hoa mỹ, nhưng tớ muốn nói với cậu rằng: sự hiện diện của cậu trong cuộc đời tớ là một điều dịu dàng mà tớ luôn trân trọng.</p>
+
+        <p class="para">Tớ thích cách cậu cười khi kể một chuyện linh tinh nào đó, thích cả cái nhíu mày lúc cậu tập trung làm bài hay loay hoay với mấy thứ nhỏ nhặt. Cậu không cần phải lúc nào cũng rạng rỡ hay mạnh mẽ đâu — những ngày cậu mệt, cậu buồn, cậu chỉ muốn im lặng, thì cứ như vậy thôi. Tớ vẫn ở đây, sẵn sàng lắng nghe, hoặc chỉ ngồi cạnh cậu mà chẳng cần nói gì 🧸.</p>
+
+        <p class="para">Cảm ơn cậu vì đã xuất hiện, vì những tin nhắn chúc nhau ngủ ngon, vì mấy câu chuyện chẳng đầu chẳng cuối nhưng khiến tớ mỉm cười cả ngày. Cảm ơn cậu vì đã là chính cậu — đáng yêu theo cách rất riêng, không giống bất kỳ ai khác ✨.</p>
+
+        <p class="para">Tớ mong cậu luôn khỏe mạnh, tự tin và nhớ chăm sóc bản thân thật tốt. Hãy tiếp tục theo đuổi những điều cậu yêu thích, dù là chuyện lớn lao hay chỉ là một sở thích bé xíu. Cậu xứng đáng được hạnh phúc, được bình an và được yêu thương thật nhiều — không chỉ hôm nay, mà mọi ngày 💗.</p>
+
+        <p class="para">Chúc cậu một ngày 20/10 thật ấm áp, nhiều tiếng cười và ngập tràn niềm vui. Tớ gửi cậu tất cả sự chân thành của tớ, gói gọn trong món quà nhỏ này</p>
+      </div>
+
+      <footer class="letter-signoff">
+        <p class="signoff-line">Thương Ngọc Bích,</p>
+        <p class="signature">Thành Đạt <span aria-hidden="true">♡</span></p>
+      </footer>
+    </article>
+
+    <div class="gift-teaser">
+      <p>Nếu cậu đã đọc đến đây, tớ còn một món quà nhỏ nữa...</p>
+      <button id="btn-open-gift" type="button" class="primary-btn gift-btn">
+        🎁 Đọc xong rồi — mở hộp quà nhé!
+      </button>
+    </div>
+  </section>
+
+  <!-- STATE 4-6: Gift box + Heart reveal -->
+  <section id="gift-stage" class="stage" aria-label="Mở hộp quà">
+    <div class="gift-stack">
+      <div class="gift-scene">
+        <div class="gift-box" aria-hidden="true">
+          <div class="box-lid">
+            <div class="ribbon-cross"></div>
+            <div class="bow"></div>
+          </div>
+          <div class="box-body">
+            <div class="ribbon-v"></div>
+            <div class="inner-glow"></div>
+          </div>
+        </div>
+        <div class="burst-light" aria-hidden="true"></div>
+      </div>
+
+      <div id="heart-canvas-wrap" class="heart-canvas-wrap" aria-label="Trái tim 3D">
+        <canvas id="heart-canvas"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
